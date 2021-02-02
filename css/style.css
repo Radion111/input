@@ -1,0 +1,184 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+
+
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*Обнуление окончания*/
+
+
+body{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   /* min-height: 100vh; */
+  
+}
+.container{
+margin: 0 auto;
+max-width: 1160px;
+}
+
+
+.main {
+  
+   flex: 1 0 auto;
+}
+.footer{
+   background-color: red ;
+ margin-top: auto; 
+}
+
+
+
+
+ 
+
+   .column{
+background-color: #F5F5F5 ;
+   }
+
+  
+   .column__body {
+     padding: 15px;
+         }
+   .column__h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 15px;
+   }
+
+   
+
+   .column__row {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   @media(max-width:1010px){
+      .column__row{ 
+      flex-direction: column;
+     align-content: center;
+      }
+   }
+  
+
+   .column__column {
+      flex: 0 0 49%;
+      margin-bottom: 10px;
+      margin-right: 5px;
+   }
+@media(max-width:1000px){
+   .column__column{ 
+   max-width:600px;
+  
+   }
+}
+
+  
+
+
+
+
+  
+
+   .item__row {
+      display: flex;
+   }
+   @media(max-width:600px){
+      .item__row{ 
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      }
+   }
+
+ 
+
+   .item__img {
+     
+      flex: 0 0 200;
+   }
+   @media(max-width:600px){
+      .item__img{ 
+      margin-bottom: 20px;
+      }
+
+   }
+
+
+   .item__body {
+padding:  0 10px;
+   }
+
+
+   .item__h3 {
+      color: #445161;
+      font-size: 24px;
+      line-height: 26px;
+   }
+
+   @media(max-width:600px){
+      .item__h3{ 
+      margin-bottom: 20px;
+      }
+   }
+   .item__text {
+color: #000000;
+font-size:16px;
+font-weight:400;
+line-height: 24px;
+letter-spacing: 1px; 
+text-transform: inherit;
+   }
+@media(max-width:600px){
+   .item__text{ 
+   margin-bottom: 20px;
+   }
+}
+/* по умолчанию font-size 16px */
+/* по умолчанию font-weight 400 */
+/* между строчний интервал В px по умолчанию идет 16px */
+/* меж буквений интервал */
+/* по умолчанию text-transform  none inherit-делает 1 букву большой*/
